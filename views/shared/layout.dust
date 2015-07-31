@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{title}</title>
+</head>
+<body>
+<div id="app">
+    {+body_section}
+    {/body_section}
+</div>
+<script type="text/javascript" src="/static/externals/jquery.js"></script>
+<script type="text/javascript" src="/static/externals/underscore.js"></script>
+<script type="text/javascript" src="/static/externals/backbone.js"></script>
+<script type="text/javascript" src="/static/externals/dust-core.js"></script>
+</body>
+</html>
