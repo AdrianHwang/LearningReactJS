@@ -15,10 +15,10 @@ var config = {
 	},
 	module: {
 		loader:[
-		{
-			test: /\.dust$/,
-			loader: 'dust'
-		},
+		// {
+		// 	test: /\.dust$/,
+		// 	loader: 'dust'
+		// },
 		{
 			test: /\.jsx/,
 			loader: 'jsx-loader?harmony',
