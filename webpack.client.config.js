@@ -6,6 +6,7 @@ var config = {
 	entry: {
 		client: ['./scripts/routes']
 	},
+	devtool: "source-map",
 	output: {
 		path: path.join(__dirname, '/public/build'),
 		publicPath: '/build',
@@ -17,10 +18,15 @@ var config = {
 		{
 			test: /\.dust$/,
 			loader: 'dust'
-		}]
+		},
+		{
+			test: /\.jsx/,
+			loader: 'jsx-loader?harmony',
+		}
+		]
 	},
 	resolve: {
-		extension: ['','.js', '.dust']
+		extension: ['','.js', '.jsx', '.dust']
 	},
 	externals: {
 		backbone: 'Backbone',
