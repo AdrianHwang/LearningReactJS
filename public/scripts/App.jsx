@@ -8,7 +8,7 @@ var App = React.createClass({
             <div>
                 <ul>
                     <li><a href="#">home</a></li>
-                    <li><a href="#inbox">Index</a></li>
+                    <li><a href="#inbox">inbox</a></li>
                     <li><a href="#about">about</a></li>
                 </ul>
                 <h1>App</h1>

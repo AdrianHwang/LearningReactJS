@@ -7,6 +7,7 @@ var About = React.createClass({
         return (
             <div>
                 <h1>About</h1>
+                <a href="#about/profile">profile</a>
                 <RouteHandler/>
             </div>
         )
