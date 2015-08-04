@@ -10,6 +10,7 @@ var App = React.createClass({
                     <li><a href="#">home</a></li>
                     <li><a href="#inbox">inbox</a></li>
                     <li><a href="#about">about</a></li>
+                    <li><a href="#notfound">notfound</a></li>
                 </ul>
                 <h1>App</h1>
                 <RouteHandler/>

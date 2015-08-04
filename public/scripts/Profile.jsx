@@ -1,6 +1,6 @@
 var React = require('react');
 var Router =  require('react-router');
-//var RouterHandler = Router.RouterHandler;
+//var RouterHandler = Router.RouteHandler;
 
 var Profile = React.createClass({
 	render(){

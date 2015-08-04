@@ -2,6 +2,7 @@ var React = require('react');
 var Router = require('react-router');
 var Route = Router.Route;
 var DefaultRoute = Router.DefaultRoute;
+var NotFoundRoute = Router.NotFoundRoute;
 
 var App = require('./App');
 var Home = require('./Home');
@@ -9,6 +10,8 @@ var About = require('./About');
 var Inbox = require('./Inbox');
 var Message = require('./Message');
 var Profile = require('./Profile');
+var NotFound =  require('./NotFound');
+
 // declare our routes and their hierarchy
 var routes = (
     <Route handler={App}>
@@ -21,6 +24,7 @@ var routes = (
             <Route path="messages/:id" handler={Message}/>
             <Route path="/archive/messages/:id" handler={Message}/>
         </Route>
+        <NotFoundRoute handler={NotFound} />
     </Route>
 );
 
