@@ -17,12 +17,12 @@ var NotFound =  require('./NotFound');
 var routes = (
     <Route path="/" handler={App}>
         <DefaultRoute handler={Home}/>
-        <Route path='home' handler={Home}/>
+        <Route name="home" path='home' handler={Home}/>
         <Route name="about" path="about" handler={About}>
         	<Route path="profile" handler={Profile}/>
         </Route>
-        <Route path="inbox" handler={Inbox}>
-            <Route path="messages/:id" handler={Message}/>
+        <Route name="inbox" path="inbox" handler={Inbox}>
+            <Route name="messages" path="messages/:id" handler={Message}/>
             <Route path="/archive/messages/:id" handler={Message}/>
         </Route>
         <Redirect from="redirect" to="about" />
